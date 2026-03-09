@@ -1,29 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Praktikum pertemuan 2</title>
+    <title>RuangRupapages</title>
+
+    <!-- Mengambil Font Modern dari Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- KONEKSI KE FILE CSS (CSS EKSTERNAL) -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CSS INTERNAL (Ditulis langsung di dalam file HTML) -->
+    <style>
+        /* CSS Internal */
+        footer {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello World</h1>
-    <h2>ini adalah subjudul</h2>
-    <p>ini adalah paragraf pertama</p>
 
-    <img src="./Screenshot 2026-02-25 152257.png" alt="">
+    <!-- Navigasi -->
+    <nav>
+        <div class="logo">RuangRupa</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
 
-    <p>apa aja deh</p>
+    <!-- Bagian Utama -->
+    <section class="RuangRupa">
+        <div class="RuangRupa-text">
+            <!-- CSS INLINE (Ditulis langsung di dalam tag HTML) -->
+            <h1 style="font-weight: 300;">Selamat Datang, Mari Jelajahi Imajinasi Tanpa Batas di Dunia RuangRupa.</h1>
+            
+            <p>Ruang ini akan membawa anda menuju ke Rupa yang sesungguhnya .</p>
+            <a href="#" class="btn">Lihat Karya</a>
+        </div>
+        
+        <div class="RuangRupa-image">
+            <img src="the logo.png" alt="Elegan dan Anggun">
+        </div>
+    </section>
 
-    <p>ini adalah list menggunakan point</p>
-    <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-    </ul>
+    <!-- Bagian Galeri -->
+    <section class="gallery">
+        <h2>Galeri Kita</h2>
+        <div class="gallery-grid">
+            
+            <!-- Kartu 1 -->
+            <div class="card">
+                <img src="baju.jpeg" alt="Foto 1">
+                <p>Fashion Design</p>
+            </div>
 
-    <p>ini adalah list menggunakan angka </p>
-    <ol>
-        <li>Item 1</li>
-        <li>Item 2</li>
-    </ol>
+            <!-- Kartu 2 -->
+            <div class="card">
+                <img src="indoor.jpeg" alt="Foto 2">
+                <p>Interior Design</p>
+            </div>
+
+            <!-- Kartu 3 -->
+            <div class="card">
+                <img src="makeup.jpeg" alt="Foto 3">
+                <p>Beauty And Make up</p>
+            </div>
+
+            <!-- Kartu 4 -->
+            <div class="card">
+                <img src="outdoor.jpeg" alt="Foto 4">
+                <p>Exterior Design</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Dibuat dengan penuh Cinta Dan Keanggunan.</p>
+    </footer>
+
 </body>
 </html>

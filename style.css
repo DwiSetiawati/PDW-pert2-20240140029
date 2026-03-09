@@ -1,0 +1,166 @@
+:root {
+    --bg-color: #f9f8f4; /* Warna latar belakang krem lembut */
+    --text-color: #333333;
+    --accent-color: #8c7b75; /* Warna aksen cokelat pudar */
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Navigasi */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: var(--bg-color);
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    margin-left: 20px;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+/* (Bagian Utama) */
+.RuangRupa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 5%;
+    gap: 50px;
+    flex-wrap: wrap; /* Agar responsif di HP */
+}
+
+.RuangRupa-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.RuangRupa-text h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.RuangRupa-text p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: var(--text-color);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--accent-color);
+}
+
+.RuangRupa-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.RuangRupa-image img {
+    width: 50%;
+    height: auto;
+    border-radius: 20px; /* Membuat sudut gambar melengkung */
+    box-shadow: 10px 10px 0px var(--accent-color); /* Efek bayangan kotak */
+    object-fit: cover;
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 50px 5%;
+    text-align: center;
+    /* Di style.css */
+
+    text-decoration: underline;
+
+}
+
+.gallery h2 {
+    font-weight: 300;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: var(--white);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 250px; /* Tinggi seragam */
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.card p {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px;
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 50px;
+}
+
+/* Responsif untuk Layar Kecil (HP) */
+@media (max-width: 768px) {
+    .RuangRupa-text h1 { font-size: 2rem; }
+    .RuangRupa { flex-direction: column-reverse; text-align: center; }
+    .RuangRupa-image img { box-shadow: 5px 5px 0px var(--accent-color); }
+}
